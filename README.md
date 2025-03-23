@@ -1,83 +1,83 @@
-# Vertex AI Local Demo 🧠
+# Vertex AI Chat Demo 🧠
 
-Aplicação Streamlit que integra com o Vertex AI da Google Cloud, utilizando o modelo Gemini 1.0 Pro para criar uma interface de chat local.
+Streamlit application that integrates with Google Cloud's Vertex AI, using the Gemini 1.0 Pro model to create a local chat interface.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
-- **Streamlit**: Framework para criação de interfaces web
-- **Vertex AI**: Plataforma de IA da Google Cloud
-- **Gemini 1.0 Pro**: Modelo de linguagem avançado
-- **Python-dotenv**: Gerenciamento de variáveis de ambiente
+- **Streamlit**: Web interface framework
+- **Vertex AI**: Google Cloud's AI platform
+- **Gemini 1.0 Pro**: Advanced language model
+- **Python-dotenv**: Environment variables management
 
-## ⚙️ Configuração
+## ⚙️ Setup
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone https://github.com/seu-usuario/vertex-ai-demo.git
+git clone https://github.com/your-user/vertex-ai-demo.git
 ```
 
-2. Instale as dependências:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Configure as credenciais do Google Cloud:
+3. Configure Google Cloud credentials:
 ```bash
 gcloud auth application-default login
 ```
 
-4. Crie o arquivo `.env` com suas credenciais:
+4. Create the `.env` file with your credentials:
 ```env
-PROJECT_ID="seu-project-id"
-REGION="sua-regiao"
+PROJECT_ID="your-project-id"
+REGION="your-region"
 ```
 
-## ▶️ Execução
+## ▶️ Running the Application
 
-Para rodar a aplicação:
+To run the application:
 ```bash
 streamlit run main.py
 ```
 
-## 🎯 Funcionalidades
+## 🎯 Features
 
-- Interface moderna e responsiva
-- Histórico de conversas persistente
-- Integração direta com Vertex AI
-- Utilização do modelo Gemini 1.0 Pro
-- Tratamento avançado de erros
-- Estilos CSS customizados
-- Feedback visual durante o processamento
+- Modern and responsive interface
+- Persistent chat history
+- Direct integration with Vertex AI
+- Gemini 1.0 Pro model usage
+- Advanced error handling
+- Custom CSS styles
+- Visual feedback during processing
 
-## 📊 Arquitetura do Projeto
+## 📊 Project Architecture
 
 ```mermaid
 graph TD
-    A[main.py] --> B[Carrega variáveis de ambiente]
-    B --> C[Autentica com Vertex AI]
-    C --> D[Inicializa modelo Gemini]
-    D --> E[Interface Streamlit]
-    E --> F[Recebe input do usuário]
-    F --> G[Gera resposta com Gemini]
-    G --> H[Exibe resposta]
-    H --> I[Armazena histórico]
+    A[main.py] --> B[Load environment variables]
+    B --> C[Authenticate with Vertex AI]
+    C --> D[Initialize Gemini model]
+    D --> E[Streamlit Interface]
+    E --> F[Receive user input]
+    F --> G[Generate response with Gemini]
+    G --> H[Display response]
+    H --> I[Store history]
     I --> E
 ```
 
-## 🖼️ Screenshot da Interface
+## 🖼️ Interface Screenshot
 
-![Interface do Chat](https://via.placeholder.com/800x500.png?text=Screenshot+da+Interface+do+Chat)
+![Chat Interface](https://via.placeholder.com/800x500.png?text=Chat+Interface+Screenshot)
 
-## 📚 Aprendizados
+## 📚 Learnings
 
-- Integração com Vertex AI
-- Uso de modelos generativos
-- Criação de interfaces com Streamlit
-- Gerenciamento de variáveis de ambiente
-- Boas práticas de MLOps
+- Vertex AI integration
+- Generative models usage
+- Streamlit interface creation
+- Environment variables management
+- MLOps best practices
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
